@@ -1,0 +1,16 @@
+version: '3'
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:18.0.2
+    volumes:
+      - target: /opt/keycloak/themes/foundryvtt-theme
+        source: ./foundryvtt-theme
+        read_only: true
+        type: bind
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command:
+      - start-dev
+    ports:
+      - "8080:8080"

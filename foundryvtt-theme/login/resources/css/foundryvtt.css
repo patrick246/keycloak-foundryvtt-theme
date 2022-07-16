@@ -1,0 +1,259 @@
+.login-fvtt {
+    background-color: #545454;
+    color: white;
+    padding: 16px 0;
+}
+
+.card-fvtt {
+    border: 2px solid #111;
+    box-shadow: 0 0 10px #000;
+    background-color: #252525;
+    padding: 0.5em;
+    margin-bottom: 16px;
+}
+
+.card-fvtt h1 {
+    border-bottom: 2px solid #782e22;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.login-fvtt-page-header span {
+    font-size: 1.5rem;
+    display: block;
+}
+
+input {
+    background-color: rgba(255, 255, 240, 0.8);
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"] {
+    width: calc(100% - 2px);
+    min-width: 20px;
+    height: 26px;
+    padding: 1px 3px;
+    margin: 0;
+    color: #191813;
+    border: 1px solid #7a7971;
+    border-radius: 3px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus-visible,
+input[type="number"]:focus-visible,
+input[type="password"]:focus-visible,
+input[type="date"]:focus-visible,
+input[type="time"]:focus-visible {
+    box-shadow: 0 0 5px #ff0000;
+    outline: none;
+}
+
+input[type="button"], input[type="submit"] {
+    background: rgba(255, 255, 240, 0.8);
+    border: 2px solid #c9c7b8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    line-height: 28px;
+}
+
+a[href] {
+    color: #ff6400;
+}
+
+a:hover {
+    text-shadow: 0 0 8px #ff0000;
+}
+
+hr {
+    border-top: 2px solid #782e22;
+    opacity: 1;
+}
+
+.alert-info {
+    margin: 16px 0;
+    padding: 2px 12px;
+    border-left: 4px solid #ff6400;
+    background-image: linear-gradient(to right, rgba(255, 100, 0, .05), rgba(255, 100, 0, 0));
+}
+
+/*
+    General form styles
+ */
+.form-group {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3px 0;
+    align-items: center;
+}
+
+.form-group > * {
+    flex: 3;
+}
+
+.form-group > *:first-child {
+    flex: 2;
+}
+
+.form-group.login-fvtt-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 8px 0;
+}
+
+
+/*
+    Login form styles
+ */
+
+#kc-form-login .form-group.login-fvtt-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 8px 0;
+}
+
+/*
+    Re-authentication and OTP user section styles
+ */
+
+.login-fvtt-header {
+    margin-bottom: 16px;
+}
+
+.login-fvtt-header .kc-login-tooltip {
+    background: rgba(255, 255, 240, 0.8);
+    border: 2px solid #c9c7b8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.login-fvtt-header a, .login-fvtt-header a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#kc-username {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#kc-username #kc-attempted-username {
+    font-size: 1.75rem;
+    margin: 0 3px;
+    flex: none;
+}
+
+#kc-username #reset-login {
+    flex: none;
+}
+
+/*
+    OTP form styles
+ */
+#kc-otp-login-form .form-group {
+    display: flex;
+    margin: 4px 0;
+}
+
+#kc-otp-login-form .form-group > *:first-child {
+    flex: 2;
+}
+
+#kc-otp-login-form .form-group > * {
+    flex: 3;
+}
+
+#kc-otp-login-form .form-group:last-child {
+    display: block;
+}
+
+#kc-otp-login-form #kc-form-buttons input[type="button"],
+#kc-otp-login-form #kc-form-buttons input[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+/*
+    Social logins
+ */
+
+#kc-social-providers .kc-social-item {
+    background: rgba(255, 255, 240, 0.8);
+    border: 2px solid #c9c7b8;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    line-height: 28px;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+}
+
+/*
+    Registration
+ */
+
+#kc-registration {
+    margin: 8px 0;
+}
+
+/*
+    Forgot password
+ */
+
+#kc-reset-password-form .form-group {
+    display: flex;
+    margin: 4px 0;
+}
+
+#kc-reset-password-form .form-group > *:first-child {
+    flex: 2;
+}
+
+#kc-reset-password-form .form-group > * {
+    flex: 3;
+}
+
+#kc-reset-password-form .login-fvtt-settings {
+    flex-direction: column;
+    justify-content: start;
+}
+
+#kc-reset-password-form #kc-form-options {
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+}
+
+#kc-reset-password-form #kc-form-buttons {
+    display: block;
+    width: 100%;
+}
+
+#kc-reset-password-form #kc-form-buttons input[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+#kc-info {
+    margin-top: 16px;
+}
+
+/*
+    Registration
+ */
+#kc-register-form #kc-form-buttons input[type="submit"] {
+    width: 100%;
+}
