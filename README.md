@@ -1,6 +1,9 @@
 # keycloak-foundryvtt-theme
 A [Keycloak](https://www.keycloak.org/) login theme in the style of FoundryVTTs interface. Developed for Keycloak 18, no guarantees for older Keycloak versions.
 
+## Screenshot
+![](images/login-page.png)
+
 ## Installation
 This theme can be installed in various ways.
 
@@ -77,7 +80,7 @@ spec:
 In case you want to build the Docker image yourself, you can do this by running the following command:
 
 ```bash
-docker buildx build -t your-registry.example.com/your-user/keycloak-foundryvtt-theme:v0.0.1 .
+docker buildx build -t your-registry.example.com/your-user/keycloak-foundryvtt-theme:v0.0.2 .
 ```
 
 ## Dependencies
