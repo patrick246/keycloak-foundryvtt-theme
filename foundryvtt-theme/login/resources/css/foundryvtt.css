@@ -107,6 +107,12 @@ hr {
     margin: 8px 0;
 }
 
+.form-group .kc-feedback-text {
+    flex-basis: 100%;
+    text-align: right;
+    padding: 4px 0 8px;
+}
+
 
 /*
     Login form styles
